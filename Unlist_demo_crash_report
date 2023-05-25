@@ -1,0 +1,168 @@
+(base) vgate@vgate:~/STIR/examples/python$ python listmode_demo.py
+
+WARNING: KeyParser warning: unrecognized keyword: offset (num of detectors)
+
+
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 8 (Thread 0x7f3c275ad700 (LWP 34256)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca36be0 <thread_status+864>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36b90 <thread_status+784>, cond=0x7f3c4ca36bb8 <thread_status+824>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca36bb8 <thread_status+824>, mutex=0x7f3c4ca36b90 <thread_status+784>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 7 (Thread 0x7f3c27dae700 (LWP 34255)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca36b60 <thread_status+736>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36b10 <thread_status+656>, cond=0x7f3c4ca36b38 <thread_status+696>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca36b38 <thread_status+696>, mutex=0x7f3c4ca36b10 <thread_status+656>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 6 (Thread 0x7f3c285af700 (LWP 34254)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca36ae0 <thread_status+608>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36a90 <thread_status+528>, cond=0x7f3c4ca36ab8 <thread_status+568>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca36ab8 <thread_status+568>, mutex=0x7f3c4ca36a90 <thread_status+528>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 5 (Thread 0x7f3c48db0700 (LWP 34253)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca36a60 <thread_status+480>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36a10 <thread_status+400>, cond=0x7f3c4ca36a38 <thread_status+440>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca36a38 <thread_status+440>, mutex=0x7f3c4ca36a10 <thread_status+400>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7f3c495b1700 (LWP 34252)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca369e0 <thread_status+352>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36990 <thread_status+272>, cond=0x7f3c4ca369b8 <thread_status+312>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca369b8 <thread_status+312>, mutex=0x7f3c4ca36990 <thread_status+272>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7f3c49db2700 (LWP 34251)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca36960 <thread_status+224>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36910 <thread_status+144>, cond=0x7f3c4ca36938 <thread_status+184>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca36938 <thread_status+184>, mutex=0x7f3c4ca36910 <thread_status+144>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7f3c4a5b3700 (LWP 34250)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7f3c4ca368e0 <thread_status+96>) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7f3c4ca36890 <thread_status+16>, cond=0x7f3c4ca368b8 <thread_status+56>) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7f3c4ca368b8 <thread_status+56>, mutex=0x7f3c4ca36890 <thread_status+16>) at pthread_cond_wait.c:647
+#3  0x00007f3c4aaf587c in blas_thread_server () from /home/vgate/anaconda3/lib/python3.10/site-packages/numpy/core/../../../../libcblas.so.3
+#4  0x00007f3c51c14609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007f3c519d5133 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 1 (Thread 0x7f3c518b1740 (LWP 34249)):
+#0  0x00007f3c51998c7f in __GI___wait4 (pid=34269, stat_loc=stat_loc
+entry=0x7ffee3548c68, options=options
+entry=0, usage=usage
+entry=0x0) at ../sysdeps/unix/sysv/linux/wait4.c:27
+#1  0x00007f3c51998bfb in __GI___waitpid (pid=<optimized out>, stat_loc=stat_loc
+entry=0x7ffee3548c68, options=options
+entry=0) at waitpid.c:38
+#2  0x00007f3c51907f67 in do_system (line=<optimized out>) at ../sysdeps/posix/system.c:172
+#3  0x00007f3c0c75c99e in TUnixSystem::StackTrace() () from /home/vgate/Software/root/bin/lib/libCore.so
+#4  0x00007f3c0c7596bc in TUnixSystem::DispatchSignals(ESignals) () from /home/vgate/Software/root/bin/lib/libCore.so
+#5  <signal handler called>
+#6  0x00007f3c0b97bae1 in llvm::sys::DynamicLibrary::addPermanentLibrary(void*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#7  0x00007f3c093fe584 in CreateInterpreter () from /home/vgate/Software/root/bin/lib/libCling.so
+#8  0x00007f3c0c5fff23 in TROOT::InitInterpreter() () from /home/vgate/Software/root/bin/lib/libCore.so
+#9  0x00007f3c0c60045f in ROOT::Internal::GetROOT2() () from /home/vgate/Software/root/bin/lib/libCore.so
+#10 0x00007f3c0c75e215 in DynamicPath(char const*, bool) () from /home/vgate/Software/root/bin/lib/libCore.so
+#11 0x00007f3c093fa0b2 in TCling::LoadLibraryMap(char const*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#12 0x00007f3c093fce37 in TCling::TCling(char const*, char const*, char const* const*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#13 0x00007f3c093fe5aa in CreateInterpreter () from /home/vgate/Software/root/bin/lib/libCling.so
+#14 0x00007f3c50084b63 in TROOT::InitInterpreter() () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libCore.so.6.28
+#15 0x00007f3c50085060 in ROOT::Internal::GetROOT2() () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libCore.so.6.28
+#16 0x00007f3c50457bba in TChain::TChain(char const*, char const*, TChain::Mode) () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libTree.so.6.28
+#17 0x00007f3c50bd1d5f in stir::InputStreamFromROOTFile::set_up(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#18 0x00007f3c50bd4b59 in stir::InputStreamFromROOTFileForCylindricalPET::set_up(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#19 0x00007f3c50a1fc72 in stir::CListModeDataROOT::CListModeDataROOT(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#20 0x00007f3c50976b95 in stir::ROOTListmodeInputFileFormat::read_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#21 0x00007f3c509281e8 in std::unique_ptr<stir::ListModeData, std::default_delete<stir::ListModeData> > stir::read_from_file<stir::ListModeData, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#22 0x00007f3c509283e8 in _wrap_ListModeData_read_from_file () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#23 0x0000560b205df970 in cfunction_vectorcall_O (func=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, args=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, nargsf=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, kwnames=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>) at /usr/local/src/conda/python-3.10.10/Objects/typeobject.c:1524
+#24 0x0000560b206a923d in _PyObject_VectorcallTstate (kwnames=0x0, nargsf=<optimized out>, args=0x7f3c51269bb0, callable=0x7f3c0e33bb00, tstate=0x560b2189fa00) at /usr/local/src/conda/python-3.10.10/Include/cpython/abstract.h:123
+#25 PyObject_Vectorcall (kwnames=0x0, nargsf=<optimized out>, args=0x7f3c51269bb0, callable=0x7f3c0e33bb00) at /usr/local/src/conda/python-3.10.10/Include/cpython/abstract.h:123
+#26 call_function (kwnames=0x0, oparg=<optimized out>, pp_stack=<synthetic pointer>, trace_info=0x7ffee354d470, tstate=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:5891
+#27 _PyEval_EvalFrameDefault (tstate=<optimized out>, f=0x7f3c51269a40, throwflag=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:4181
+#28 0x0000560b2074f6a2 in _PyEval_EvalFrame (throwflag=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, f=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, tstate=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>) at /usr/local/src/conda/python-3.10.10/Include/internal/pycore_ceval.h:46
+#29 _PyEval_Vector (tstate=0x560b2189fa00, con=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=<optimized out>, kwnames=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:5065
+#30 0x0000560b2074f5e7 in PyEval_EvalCode (co=0x7f3c5117f3c0, globals=0x7f3c511840c0, locals=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:1134
+#31 0x0000560b207823fc in run_eval_code_obj (tstate=0x560b2189fa00, co=0x7f3c5117f3c0, globals=0x7f3c511840c0, locals=0x7f3c511840c0) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1291
+#32 0x0000560b2077d2d4 in run_mod (mod=<optimized out>, filename=<optimized out>, globals=0x7f3c511840c0, locals=0x7f3c511840c0, flags=<optimized out>, arena=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1312
+#33 0x0000560b2060b58d in pyrun_file (fp=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, filename=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, start=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, globals=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, locals=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, closeit=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1208
+#34 0x0000560b207774f5 in _PyRun_SimpleFileObject (fp=0x560b218a45f0, filename=0x7f3c51279920, closeit=1, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:456
+#35 0x0000560b207770a3 in _PyRun_AnyFileObject (fp=0x560b218a45f0, filename=0x7f3c51279920, closeit=1, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:90
+#36 0x0000560b20774279 in pymain_run_file_obj (skip_source_first_line=0, filename=0x7f3c51279920, program_name=0x7f3c511c6170) at /usr/local/src/conda/python-3.10.10/Modules/main.c:357
+#37 pymain_run_file (config=0x560b21883e70) at /usr/local/src/conda/python-3.10.10/Modules/main.c:376
+#38 pymain_run_python (exitcode=0x7ffee354d760) at /usr/local/src/conda/python-3.10.10/Modules/main.c:591
+#39 Py_RunMain () at /usr/local/src/conda/python-3.10.10/Modules/main.c:670
+#40 0x0000560b20741dc9 in Py_BytesMain (argc=<optimized out>, argv=<optimized out>) at /usr/local/src/conda/python-3.10.10/Modules/main.c:1090
+#41 0x00007f3c518da083 in __libc_start_main (main=0x560b20741d80 <main>, argc=2, argv=0x7ffee354d978, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffee354d968) at ../csu/libc-start.c:308
+#42 0x0000560b20741cc1 in _start () at /usr/local/src/conda/python-3.10.10/Parser/pegen.c:880
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00007f3c0b97bae1 in llvm::sys::DynamicLibrary::addPermanentLibrary(void*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#7  0x00007f3c093fe584 in CreateInterpreter () from /home/vgate/Software/root/bin/lib/libCling.so
+#8  0x00007f3c0c5fff23 in TROOT::InitInterpreter() () from /home/vgate/Software/root/bin/lib/libCore.so
+#9  0x00007f3c0c60045f in ROOT::Internal::GetROOT2() () from /home/vgate/Software/root/bin/lib/libCore.so
+#10 0x00007f3c0c75e215 in DynamicPath(char const*, bool) () from /home/vgate/Software/root/bin/lib/libCore.so
+#11 0x00007f3c093fa0b2 in TCling::LoadLibraryMap(char const*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#12 0x00007f3c093fce37 in TCling::TCling(char const*, char const*, char const* const*) () from /home/vgate/Software/root/bin/lib/libCling.so
+#13 0x00007f3c093fe5aa in CreateInterpreter () from /home/vgate/Software/root/bin/lib/libCling.so
+#14 0x00007f3c50084b63 in TROOT::InitInterpreter() () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libCore.so.6.28
+#15 0x00007f3c50085060 in ROOT::Internal::GetROOT2() () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libCore.so.6.28
+#16 0x00007f3c50457bba in TChain::TChain(char const*, char const*, TChain::Mode) () from /home/vgate/anaconda3/lib/python3.10/site-packages/../../libTree.so.6.28
+#17 0x00007f3c50bd1d5f in stir::InputStreamFromROOTFile::set_up(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#18 0x00007f3c50bd4b59 in stir::InputStreamFromROOTFileForCylindricalPET::set_up(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#19 0x00007f3c50a1fc72 in stir::CListModeDataROOT::CListModeDataROOT(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#20 0x00007f3c50976b95 in stir::ROOTListmodeInputFileFormat::read_from_file(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#21 0x00007f3c509281e8 in std::unique_ptr<stir::ListModeData, std::default_delete<stir::ListModeData> > stir::read_from_file<stir::ListModeData, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#22 0x00007f3c509283e8 in _wrap_ListModeData_read_from_file () from /home/vgate/anaconda3/lib/python3.10/site-packages/_stir.so
+#23 0x0000560b205df970 in cfunction_vectorcall_O (func=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, args=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, nargsf=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, kwnames=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>) at /usr/local/src/conda/python-3.10.10/Objects/typeobject.c:1524
+#24 0x0000560b206a923d in _PyObject_VectorcallTstate (kwnames=0x0, nargsf=<optimized out>, args=0x7f3c51269bb0, callable=0x7f3c0e33bb00, tstate=0x560b2189fa00) at /usr/local/src/conda/python-3.10.10/Include/cpython/abstract.h:123
+#25 PyObject_Vectorcall (kwnames=0x0, nargsf=<optimized out>, args=0x7f3c51269bb0, callable=0x7f3c0e33bb00) at /usr/local/src/conda/python-3.10.10/Include/cpython/abstract.h:123
+#26 call_function (kwnames=0x0, oparg=<optimized out>, pp_stack=<synthetic pointer>, trace_info=0x7ffee354d470, tstate=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:5891
+#27 _PyEval_EvalFrameDefault (tstate=<optimized out>, f=0x7f3c51269a40, throwflag=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:4181
+#28 0x0000560b2074f6a2 in _PyEval_EvalFrame (throwflag=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, f=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, tstate=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>) at /usr/local/src/conda/python-3.10.10/Include/internal/pycore_ceval.h:46
+#29 _PyEval_Vector (tstate=0x560b2189fa00, con=<optimized out>, locals=<optimized out>, args=<optimized out>, argcount=<optimized out>, kwnames=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:5065
+#30 0x0000560b2074f5e7 in PyEval_EvalCode (co=0x7f3c5117f3c0, globals=0x7f3c511840c0, locals=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/ceval.c:1134
+#31 0x0000560b207823fc in run_eval_code_obj (tstate=0x560b2189fa00, co=0x7f3c5117f3c0, globals=0x7f3c511840c0, locals=0x7f3c511840c0) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1291
+#32 0x0000560b2077d2d4 in run_mod (mod=<optimized out>, filename=<optimized out>, globals=0x7f3c511840c0, locals=0x7f3c511840c0, flags=<optimized out>, arena=<optimized out>) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1312
+#33 0x0000560b2060b58d in pyrun_file (fp=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, filename=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, start=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, globals=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, locals=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, closeit=<error reading variable: dwarf2_find_location_expression: Corrupted DWARF expression.>, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:1208
+#34 0x0000560b207774f5 in _PyRun_SimpleFileObject (fp=0x560b218a45f0, filename=0x7f3c51279920, closeit=1, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:456
+#35 0x0000560b207770a3 in _PyRun_AnyFileObject (fp=0x560b218a45f0, filename=0x7f3c51279920, closeit=1, flags=0x7ffee354d768) at /usr/local/src/conda/python-3.10.10/Python/pythonrun.c:90
+#36 0x0000560b20774279 in pymain_run_file_obj (skip_source_first_line=0, filename=0x7f3c51279920, program_name=0x7f3c511c6170) at /usr/local/src/conda/python-3.10.10/Modules/main.c:357
+#37 pymain_run_file (config=0x560b21883e70) at /usr/local/src/conda/python-3.10.10/Modules/main.c:376
+#38 pymain_run_python (exitcode=0x7ffee354d760) at /usr/local/src/conda/python-3.10.10/Modules/main.c:591
+#39 Py_RunMain () at /usr/local/src/conda/python-3.10.10/Modules/main.c:670
+#40 0x0000560b20741dc9 in Py_BytesMain (argc=<optimized out>, argv=<optimized out>) at /usr/local/src/conda/python-3.10.10/Modules/main.c:1090
+#41 0x00007f3c518da083 in __libc_start_main (main=0x560b20741d80 <main>, argc=2, argv=0x7ffee354d978, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffee354d968) at ../csu/libc-start.c:308
+#42 0x0000560b20741cc1 in _start () at /usr/local/src/conda/python-3.10.10/Parser/pegen.c:880
+===========================================================
+
