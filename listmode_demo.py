@@ -39,7 +39,7 @@ time_frames.set_time_frame(1, 0, 10)
 lm_to_projdata.set_time_frame_definitions(time_frames)
 
 # Read template ProjData.
-template_projdata = stir.ProjData.read_from_file("../../recon_test_pack/Siemens_mMR_seg2.hs")
+template_projdata = stir.ProjData.read_from_file("STIRScanner_D690_full_segment.hs")
 lm_to_projdata.set_template_proj_data_info(template_projdata.get_proj_data_info())
 
 # Perform the actual processing.
